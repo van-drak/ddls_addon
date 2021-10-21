@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <menuitem id="ddls_add" name="Add Employee" parent="hr.menu_hr_employee_payroll" sequence="0" />
+</odoo>

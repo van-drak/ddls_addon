@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="view_employee_form_ddls" model="ir.ui.view">
+        <field name="name">hr.employee.ddls</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="i_love_field" />
+            </xpath>
+            <xpath expr="//field[@name='address_home_id']" position="after">
+                <field name="salary_field" />
+                <field name="tax_field" />
+                <field name="total_salary_field" />
+            </xpath>
+            <xpath expr="//field[@name='phone']" position="replace">
+                <field name="special_phone" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
